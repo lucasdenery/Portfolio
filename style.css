@@ -51,17 +51,172 @@ body {
 
 }
 
-.menu-link::before {
+.menu-link::after {
     content: '';
     height: 2px;
-    width: 0%;
+    width: 100%;
     position: absolute;
     bottom: 0;
     left: 0;
     background: linear-gradient(90deg, var(--primaria), var(--secundaria));
+    transition: width 0.5s ease;
 }
 
-.menu-link:hover::after{
+.menu-link:hover::after {
     width: 100%;
 
+}
+
+.cabecalho {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.foto-perfil {
+    width: 200px;
+    height: 200px;
+    box-shadow: 56px -20px 18px 0px rgba(18, 27, 49, 0.9);
+    border-radius: 50%;
+    border: 4px var(--vidro);
+}
+
+h1 {
+    font-size: 3.5rem;
+    color: var(--primaria);
+    font-weight: bold;
+    margin: 20px;
+}
+
+.ca {
+    font-size: 1.5rem;
+    color: var(--claro);
+}
+
+.sobre {
+    padding: 6rem 2rem;
+
+}
+
+.sobre-titulo {
+    font-size: 3rem;
+    color: var(--claro);
+    text-align: center;
+
+}
+
+.sobre-caixa {
+    padding: 2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.5s ease;
+
+
+}
+
+.sobre-caixa:hover {
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    transform: translateY(-10px) scale(1.03);
+
+}
+
+.pa {
+    text-align: center;
+    font-size: 1rem;
+    margin: 7px;
+    padding: 7px;
+
+}
+
+.projetos {
+    padding: 6rem 2rem;
+
+}
+
+h2 {
+
+    font-size: 3rem;
+    color: var(--claro);
+    text-align: center;
+    margin: 20px;
+
+}
+
+.projetos-caixa {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+
+
+.projetos-card {
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    border: 1px solid var(--vidro);
+    overflow: hidden;
+    transition: all 0.5s ease;
+
+
+}
+
+.projetos-card:hover {
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    transform: translateY(-10px) scale(1.03);
+}
+
+h3 {
+    text-align: center;
+    margin: 10px;
+}
+
+
+.projetos-imagens {
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+
+
+}
+
+.contatos {
+    padding: 6rem 2rem;
+    justify-items: center;
+
+}
+
+.title {
+    padding: 10%;
+}
+
+.git {
+    display: flex;
+     justify-items: center;
+    justify-content: center;
+    
+
+
+}
+
+.link {
+    display: flex;
+     justify-items: center;
+    justify-content: center;
+
+}
+
+.wpp {
+     display: flex;
+    justify-items: center;
+    justify-content: center
 }
