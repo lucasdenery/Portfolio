@@ -191,7 +191,8 @@ h3 {
 
 .contatos {
     padding: 6rem 2rem;
-    justify-items: center;
+    position: relative;
+   
 
 }
 
@@ -199,24 +200,35 @@ h3 {
     padding: 10%;
 }
 
-.git {
+
+
+.tudo{
     display: flex;
-     justify-items: center;
+    list-style: none;
+    gap: 3rem;
     justify-content: center;
+   
+   
+
     
+   
+}
 
+.link:hover{
+    box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    transform: translateY(-10px) scale(1.03);
+     transition: all 0.7s ease;
 
 }
 
-.link {
-    display: flex;
-     justify-items: center;
-    justify-content: center;
-
+.wpp:hover{
+     box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    transform: translateY(-10px) scale(1.03);
+     transition: all 0.7s ease;
 }
 
-.wpp {
-     display: flex;
-    justify-items: center;
-    justify-content: center
+.git:hover{
+      box-shadow: 0 10px 20px rgba(79, 70, 229, 0.2);
+    transform: translateY(-10px) scale(1.03);
+     transition: all 0.7s ease;
 }
